@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Share Modal UI design in HTML and CSS | RKcodes</title>
+      <!-- Linking to CSS -->
+      <link rel="stylesheet" href="style.css">
+      <!-- Font Awesome Icons -->
+      <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+</head>
+<body>
+      <div class="wrapper">
+            <header>
+                  <h2>Share Modal</h2>
+                  <div class="close">&times;</div>
+            </header>
+            <h4>Share via</h4>
+            <div class="share-options">
+                  <div class="option facebook"><i class="fab fa-facebook-f"></i></div>
+                  <div class="option twitter"><i class="fab fa-twitter"></i></div>
+                  <div class="option email"><i class="fas fa-envelope"></i></div>
+                  <div class="option whatsapp"><i class="fab fa-whatsapp"></i></div>
+                  <div class="option telegram"><i class="fab fa-telegram-plane"></i></div>
+            </div>
+            <h4>Or share via link</h4>
+            <div class="field">
+                  <i class="far fa-link"></i>
+                  <input type="text" id="input" value="https://example.com/">
+                  <button id="button" onclick="myFunction()">Copy</button>
+            </div>
+      </div>
+      <script>
+            function myFunction(){
+                  input = document.querySelector("#input");
+                  
+                  input.select();
+                  input.setSelectionRange(0,99999);
+                  navigator.clipboard.writeText(input.value);
+                  document.querySelector("#button").innerHTML = "Copied";
+                  document.querySelector(".field").style.width = "310px";
+            }
+      </script>
+</body>
+</html>

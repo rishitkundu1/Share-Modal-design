@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+} 
+body{
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: dodgerblue;
+}
+.wrapper{
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 10px 20px;
+}
+.wrapper header{
+      width: 380px;
+      border-bottom: 1px solid rgb(184, 183, 183);
+      display: flex;
+      padding: 0 0 10px 0;
+}
+header h2{
+      color: dodgerblue;
+      font-size: 23px;
+}
+header .close{
+      padding: 3px 12px;
+      border-radius: 50%;
+      background-color: rgb(184, 183, 183);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 200px;
+      cursor: pointer;
+}
+.wrapper h4{
+      color: rgb(77, 77, 77);
+      margin: 10px 0 5px 20px;
+}
+.share-options{
+      display: flex;
+}
+.option{
+      width: 15px;
+      /* height: 20px; */
+      border: 1px solid gray;
+      padding: 10px 15px;
+      border-radius: 50%;
+      text-align: center;
+      margin: 5px 5px 5px 20px;
+      cursor: pointer;
+}
+.facebook{
+      color: rgb(23, 76, 129);
+      border: 1px solid rgb(23, 76, 129);
+}
+.twitter{
+      color: dodgerblue;
+      border: 1px solid dodgerblue;
+}
+.email{
+      color: gray;
+      border: 1px solid gray;
+}
+.whatsapp{
+      color: green;
+      border: 1px solid green;
+}
+.telegram{
+      color: darkblue;
+      border: 1px solid darkblue;
+}
+.field{
+      width: 300px;
+      border: 1px solid gray;
+      padding: 5px;
+      margin-left: 20px;
+      margin-bottom: 10px;
+}
+.field i{
+      color: dodgerblue;
+      width: 30px;
+      height: 100%;
+      text-align: center;
+}
+.field input{
+      border: none;
+      outline: none;
+      width: 200px;
+}
+.field button{
+      padding: 5px 10px;
+      background-color: dodgerblue;
+      color: white;
+      border: none;
+}
